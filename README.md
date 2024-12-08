@@ -57,6 +57,7 @@ Q-Learning uses reinforcement learning with parameters like learning rate (), di
 
 GAME PLAY
 
+
  Now enter the mode number : 
  
 "1: Q-Learning vs Human"
@@ -67,9 +68,15 @@ IN MODE 1 : "Enter row and column separated by space (1 3): "
 
 Enter mode: 1 - "1: Q-Learning (AI) vs Human Agent"
 
-_ _ _     = [(1 1),(1 2),(1,3)] 
-_ _ _     = [(2 1),(2 2),(2,3)] =  VALID human moves 
-_ _ _     = [(3 1),(3 2),(3,3)]
+_ _ _     = [(1 1),(1 2),(1,3)];
+
+_ _ _     = [(2 1),(2 2),(2,3)];
+
+_ _ _     = [(3 1),(3 2),(3,3)];
+
+
+ VALID human moves
+ 
 
 Enter mode: 2 - "2: Q-Learning vs Alpha-Beta"
 
@@ -112,17 +119,22 @@ Minimax explores all possible outcomes exhaustively but has higher computational
 
 
 GAME PLAY
+{
 
 Choose game mode:
 1. Human vs AI (Alpha-Beta)
 2. AI (Alpha-Beta) vs AI (Minimax)
 3. Exit
 Enter mode (1, 2, or 3): 1
-  |   |      = [(0), (1), (2)]
----------
-  |   |      = [(3), (4), (5)]    =  VALID HUMAN MOVES
----------
-  |   |      = [(6), (7), (8)]
+
+  |   |      = [(0), (1), (2)];
+  
+  |   |      = [(3), (4), (5)];
+  
+  |   |      =[(6), (7), (8)];
+                                           
+
+   VALID human moves}
 
 
 Choose game mode:
@@ -134,7 +146,7 @@ Enter mode (1, 2, or 3): 2 - 2:AI (Alpha-Beta) vs AI (Minimax)
 
 Enter mode (1, 2, or 3): 3
 Goodbye!
-
+}
 
 3- BFS VS HUMAN AGENT
 
@@ -167,44 +179,63 @@ Orchestrates the gameplay loop, alternating between player and AI turns, managin
 
 GAME PLAY
 
-  |   |       = [(0 0), (0 1), (0 2)]
----------
-  |   |       = [(1 0), (1 1), (1 2)]      = VALID HUMAN MOVES 
----------
-  |   |       = [(2 0), (2 1), (2 2)]
+  |   |       = [(0 0), (0 1), (0 2)];
 
+  |   |       = [(1 0), (1 1), (1 2)];    
 
+  |   |       = [(2 0), (2 1), (2 2)];
+
+ VALID human moves
+
+ 
 **Results**
 
+
 1-  " Q-Learning vs human agent & Q-learning  vs herustic alpha beta purning "
+
 Choose mode:
 1: Q-Learning vs Human
 2: Q-Learning vs Alpha-Beta
 3: Exit
 Enter mode: 1
-_ _ _
-_ _ _
-_ _ _
+
+_ _ _;
+
+_ _ _;
+
+_ _ _;
 
 Enter row and column separated by space (1 3): 1 1
-X _ _
-_ O _
-_ _ _
+
+X _ _;
+
+_ O _;
+
+_ _ _;
 
 Enter row and column separated by space (1 3): 2 1
-X _ O
-X O _
-_ _ _
+
+X _ O ;
+
+X O _ ;
+
+_ _ _ ;
 
 Enter row and column separated by space (1 3): 2 3
-X _ O
-X O X
-_ O _
+
+X _ O ;
+
+X O X ;
+
+_ O _ ;
 
 Enter row and column separated by space (1 3): 3 3
-X O O
-X O X
-_ O X
+
+X O O ;
+
+X O X ;
+
+_ O X ;
 
 Q-Learning Agent wins!
 
@@ -213,25 +244,45 @@ Choose mode:
 2: Q-Learning vs Alpha-Beta
 3: Exit
 Enter mode: 2
-_ _ _
-_ _ _
-_ _ _
 
-_ _ O
-_ _ X
-_ _ _
+_ _ _;
 
-O _ O
-_ _ X
-_ _ X
+_ _ _;
 
-O X O
-_ _ X
-O _ X
+_ _ _;
 
-O X O
-O X X
-O _ X
+---
+_ _ O;
+
+_ _ X;
+
+_ _ _;
+
+---
+
+O _ O;
+
+_ _ X;
+
+_ _ X;
+
+---
+
+O X O;
+
+_ _ X;
+
+O _ X;
+
+------
+
+O X O;
+
+O X X;
+
+O _ X;
+
+-----
 
 Alpha-Beta Agent wins!
 
@@ -250,59 +301,110 @@ Choose game mode:
 2. AI (Alpha-Beta) vs AI (Minimax)
 3. Exit
 Enter mode (1, 2, or 3): 1
+{
+
+  |   |
+
+--------
+
   |   |  
----------
-  |   |  
+  
 ---------
   |   |  
 
+
 Human vs AI (Alpha-Beta).
-Enter your move (0 to 8): 0 
-Invalid move, try again.
+
 Enter your move (0 to 8): 0
+
+Invalid move, try again.
+
+Enter your move (0 to 8): 0
+
 X |   |  
+
 ---------
   |   |  
+  
 ---------
   |   |  
+
+ AI move
+ 
 X |   |  
+
 ---------
   | O |  
+  
 ---------
   |   |  
+
 Enter your move (0 to 8): 8
+
 X |   |  
+
 ---------
   | O |  
+  
 ---------
   |   | X
+
+  AI move
+  
 X | O |  
+
 ---------
   | O |  
+  
 ---------
   |   | X
+  
 Enter your move (0 to 8): 5
+
 X | O |  
+
 ---------
+
   | O | X
+  
 ---------
+
   |   | X
+
+  AI move
+  
 X | O | O
+
 ---------
+
   | O | X
+  
 ---------
+
   |   | X
+  
 Enter your move (0 to 8): 3
+
 X | O | O
+
 ---------
+
 X | O | X
+
 ---------
+
   |   | X
+
+ AI move
+ 
 X | O | O
+
 ---------
 X | O | X
+
 ---------
 O |   | X
+
 AI wins!
 
 Choose game mode:
@@ -310,49 +412,85 @@ Choose game mode:
 2. AI (Alpha-Beta) vs AI (Minimax)
 3. Exit
 Enter mode (1, 2, or 3): 2
-  |   |  
+
+  |   |
+
 ---------
-  |   |  
+
+  |   | 
+  
 ---------
   |   |  
 
 AI (Alpha-Beta) vs AI (Minimax).
 Minimax AI Move:
-X |   |  
+
+ X |   |  
+ 
 ---------
+
   |   |  
+  
 ---------
+
   |   |  
+
+  
 Alpha-Beta AI Move:
+
 X |   |  
+
 ---------
+
   | O |  
+  
 ---------
+
   |   |  
+  
 Minimax AI Move:
+
 X | X |  
+
 ---------
   | O |  
+  
 ---------
+
   |   |  
+  
 Alpha-Beta AI Move:
+
 X | X | O
+
 ---------
+
   | O |  
+  
 ---------
+
   |   |  
+  
 Minimax AI Move:
+
 X | X | O
+
 ---------
-X | O |  
----------
+X | O | 
+
+--------
   |   |  
+
 Alpha-Beta AI Move:
+
 X | X | O
+
 ---------
 X | O |  
+
 ---------
 O |   |  
+
 Alpha-Beta AI wins!
 
 Choose game mode:
@@ -366,76 +504,120 @@ Goodbye!
 
 **3 - " BFS VS HUMAN AGENT "**
 
+
  |   |  
+ 
 ---------
   |   |  
----------
+  
+ ---------
   |   |  
+  
 ---------
+
 Enter row and column (0-2) for player X (e.g., '0 0'): 0 0
+
 X |   |  
+
 ---------
   |   |  
+  
 ---------
-  |   |  
+  |   | 
+  
 ---------
 Player O (AI) is making a move...
-X |   |  
+
+X |   | 
+
 ---------
   |   | O
+  
 ---------
   |   |  
+  
 ---------
 Enter row and column (0-2) for player X (e.g., '0 0'): 1 2
+
 Invalid move. Please try again.
+
 X |   |  
+
 ---------
   |   | O
+  
 ---------
-  |   |  
+  |   |
+  
 ---------
 Enter row and column (0-2) for player X (e.g., '0 0'): 2 2
 X |   |  
+
 ---------
   |   | O
+  
 ---------
   |   | X
+  
 ---------
 Player O (AI) is making a move...
-X |   |  
+
+X |   |
+
 ---------
   |   | O
+  
 ---------
 O |   | X
+
 ---------
+
 Enter row and column (0-2) for player X (e.g., '0 0'): 2 1
+
 X |   |  
+
 ---------
   |   | O
+  
 ---------
 O | X | X
+
 ---------
+
 Player O (AI) is making a move...
-X |   |  
+
+X |   | 
+
 ---------
 O |   | O
+
 ---------
 O | X | X
+
 ---------
 Enter row and column (0-2) for player X (e.g., '0 0'): 0 1
+
 X | X |  
+
 ---------
 O |   | O
+
 ---------
 O | X | X
+
 ---------
 Player O (AI) is making a move...
+
 X | X |  
+
 ---------
 O | O | O
+
 ---------
 O | X | X
+
 ---------
+
 Player O wins!
 
 Results show Q-Learning adapts through learning, Alpha-Beta is efficient and faster than Minimax, and Minimax is effective but computationally expensive. Overall, Q-Learning provides adaptability, while Alpha-Beta and Minimax use deterministic strategies with varying efficiency.
