@@ -1,8 +1,10 @@
 # Final-Project-Tic-tac-toe
-overview of the project
-Introduction
+
+## Abstract 
 
 This project, titled "Advanced Techniques in Tic-Tac-Toe using Alpha-Beta, Minimax, and Q-Learning", explores AI strategies for enhancing gameplay in the classic Tic-Tac-Toe game. Tic-Tac-Toe is a two-player game played on a 3x3 grid where players take turns placing their marker (‘X’ or ‘O’) in an empty cell. The objective is to align three markers horizontally, vertically, or diagonally. This seemingly simple game is a great way to explore AI strategies because of its limited but non-trivial decision space. This project, titled "Tic-Tac-Toe AI Algorithms", explores and comparing AI strategies for enhancing gameplay in the classic Tic-Tac-Toe game. Tic-Tac-Toe is a two-player game played on a 3x3 grid where players take turns placing their marker (‘X’ or ‘O’) in an empty cell. The objective is to align three markers horizontally, vertically, or diagonally. This seemingly simple game is a great way to explore AI strategies because of its limited but non-trivial decision space.
+
+## Introduction
 
 AI algorithms can enhance gameplay by making decisions based on various strategies:
 
@@ -15,9 +17,9 @@ Alpha-Beta Pruning with herustic : The Heuristic Alpha-Beta Tree Search algorith
 Minimax: Ensures the best outcome for the AI by considering all possible game scenarios, albeit at a higher computational cost.
 
 
-Explanation 
+# Explanation 
 
-1- Q-Learning vs human agent & Q-learning  vs herustic alpha beta purning:
+## 1- " Q-Learning vs human agent & Q-learning  vs herustic alpha beta purning "
 
 state_to_key(board): Converts the board's state into a unique string key for the Q-table.
 
@@ -55,9 +57,9 @@ if __name__ == "__main__": Entry point of the program, allowing users to choose 
 
 Q-Learning uses reinforcement learning with parameters like learning rate (), discount factor (), and exploration rate (). It trains over 10,000 episodes to optimize gameplay. Core functions include state_to_key to encode board states, q_learning_action for move selection, and update_q_table for updating Q-values based on rewards(+1 for wining;0 for tie;-1 for lose).
 
-GAME PLAY
+### GAME PLAY
 
-
+1 - "  Q-Learning vs human agent & Q-Learning vs herustic Alpha -beta "
  Now enter the mode number : 
  
 "1: Q-Learning vs Human"
@@ -83,7 +85,7 @@ Enter mode: 2 - "2: Q-Learning vs Alpha-Beta"
 Enter mode: 3 - "3: Exit"  
 
 
-2 - " HEURISTIC ALPHA BETA PRUNING VS HUMAN AGENT & HEURISTIC ALPHA BETA PRUNING VS MINIMAX "
+## 2 - " HEURISTIC ALPHA BETA PRUNING VS HUMAN AGENT & HEURISTIC ALPHA BETA PRUNING VS MINIMAX "
 
 
 draw_board(board) - Displays the current game board in a user-friendly grid format. Helps visualize the game state for players.
@@ -118,7 +120,7 @@ Minimax
 Minimax explores all possible outcomes exhaustively but has higher computational costs compared to Alpha-Beta. Its primary functions, min_max and get_minimax_move, evaluate board states and determine optimal moves for the AI.
 
 
-GAME PLAY
+### GAME PLAY
 {
 
 Choose game mode:
@@ -148,7 +150,7 @@ Enter mode (1, 2, or 3): 3
 Goodbye!
 }
 
-3- BFS VS HUMAN AGENT
+## 3- BFS VS HUMAN AGENT
 
 BFS-Based AI
 
@@ -177,7 +179,7 @@ play_tic_tac_toe()
 Orchestrates the gameplay loop, alternating between player and AI turns, managing moves, and checking for wins or draws until the game concludes.
 
 
-GAME PLAY
+### GAME PLAY
 
   |   |       = [(0 0), (0 1), (0 2)];
 
@@ -188,10 +190,10 @@ GAME PLAY
  VALID human moves
 
  
-**Results**
+# **Results**
 
 
-1-  " Q-Learning vs human agent & Q-learning  vs herustic alpha beta purning "
+## **1-  " Q-Learning vs human agent & Q-learning  vs herustic alpha beta purning "**
 
 Choose mode:
 1: Q-Learning vs Human
@@ -294,7 +296,7 @@ Enter mode: 3
 Goodbye!
 
 
-**2 - " HEURISTIC ALPHA BETA PRUNING VS HUMAN AGENT & HEURISTIC ALPHA BETA PRUNING VS MINIMAX "**
+## **2 - " HEURISTIC ALPHA BETA PRUNING VS HUMAN AGENT & HEURISTIC ALPHA BETA PRUNING VS MINIMAX "**
 
 Choose game mode:
 1. Human vs AI (Alpha-Beta)
@@ -502,7 +504,7 @@ Goodbye!
 
 
 
-**3 - " BFS VS HUMAN AGENT "**
+## **3 - " BFS VS HUMAN AGENT "**
 
 
  |   |  
