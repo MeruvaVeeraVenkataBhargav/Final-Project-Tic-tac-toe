@@ -3,6 +3,8 @@
 ## Abstract 
 
 This project, titled "Advanced Techniques in Tic-Tac-Toe using Alpha-Beta, Minimax, and Q-Learning", explores AI strategies for enhancing gameplay in the classic Tic-Tac-Toe game. Tic-Tac-Toe is a two-player game played on a 3x3 grid where players take turns placing their marker (‘X’ or ‘O’) in an empty cell. The objective is to align three markers horizontally, vertically, or diagonally. This seemingly simple game is a great way to explore AI strategies because of its limited but non-trivial decision space. This project, titled "Tic-Tac-Toe AI Algorithms", explores and comparing AI strategies for enhancing gameplay in the classic Tic-Tac-Toe game. Tic-Tac-Toe is a two-player game played on a 3x3 grid where players take turns placing their marker (‘X’ or ‘O’) in an empty cell. The objective is to align three markers horizontally, vertically, or diagonally. This seemingly simple game is a great way to explore AI strategies because of its limited but non-trivial decision space.
+## Software and Environment
+Python 3.13 is used, which supports all the necessary libraries and tools for implementing AI algorithms and managing gameplay logic.
 
 ## Introduction
 
